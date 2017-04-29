@@ -1,12 +1,12 @@
-# Fitbyte in Rails
+# Rescue Senior Fitbit Auth using zokioki fitbyte gem
+This repo is cloned from zokioki/fitbyte
 
-An example Rails app using the Fitbyte API wrapper.
 
 ### Before Starting
 
 To interact with Fitbit's API, you must register your application at [dev.fitbit.com](https://dev.fitbit.com/apps). During registration, make sure the value for the *Callback URL* is the following:
 
-    http://localhost:3000/users/auth/fitbit_oauth2/callback
+http://localhost:3000/users/auth/fitbit_oauth2/callback
 
 After registering, you should have access to **CLIENT ID**, **CLIENT SECRET**, and **REDIRECT URI (Callback URL)** values for instantiating a `Fitbyte::Client` object in your app.
 
