@@ -1,0 +1,32 @@
+<!-- <meta HTTP-EQUIV="REFRESH" content="60"; > -->
+<h1><%= @user_name %>'s Fitbit Data</h1>
+
+<hr>
+
+<h2>Devices:</h2>
+<% @devices.each do |device| %>
+<p><strong><%= device[:device_version] %></strong></p>
+<p>Battery Level: <%= device[:battery] %></p>
+<% end %>
+
+<hr>
+
+<h2>Heart Rate Zones Summary:</h2>
+<h3>Date: <%= Time.now.strftime("%m/%d/%Y") %></h3>
+<h3>Time: <%= Time.now.strftime("%l:%M:%S %p") %></h3>
+<!-- <p><%= @daily_summary_ %></p> -->
+<!-- <p> <%= @format_date %> </p>
+<p>Resting Heartrate: <%= @resting_hear_rate %></p>
+<p>Inactive mins: <%= @inactive_minutes %></p>
+<p>Steps count: <%= @step_count %></p>
+<p>Very active mins: <%= @very_active_minutes %></p> -->
+
+<% @daily_summary.each do |hash| %>
+  <% hash.each do |k, v| %>
+  <p><strong><%= k %> --> </strong><i><%= v %></i></p>
+  <% end %>
+  <p>-------</p>
+  <% end %>
+  
+  <hr>
+  
