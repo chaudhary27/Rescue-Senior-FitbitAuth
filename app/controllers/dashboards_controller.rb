@@ -39,11 +39,15 @@ class DashboardsController < ApplicationController
     
     inactive_minutes_ = Bigbertha::Ref.new( 'https://rescuesenior-d31bf.firebaseio.com/inactive_minutes' )
     inactive_minutes_.set(@inactive_minutes)
-    
+    # sleep 3
     redirect_to "http://localhost:3000/users/1"
     
   end
   
+  def refresh_page
+    # sleep 5
+    # redirect_to "http://localhost:3000/users/1"
+  end
   
   private
   

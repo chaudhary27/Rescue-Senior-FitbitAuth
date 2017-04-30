@@ -1,4 +1,4 @@
-<!-- <meta HTTP-EQUIV="REFRESH" content="60"; > -->
+<meta HTTP-EQUIV="REFRESH" content="60";>
 <h1><%= @user_name %>'s Fitbit Data</h1>
 
 <hr>
@@ -22,11 +22,10 @@
 <p>Very active mins: <%= @very_active_minutes %></p> -->
 
 <% @daily_summary.each do |hash| %>
-  <% hash.each do |k, v| %>
-  <p><strong><%= k %> --> </strong><i><%= v %></i></p>
-  <% end %>
-  <p>-------</p>
-  <% end %>
-  
-  <hr>
-  
+<% hash.each do |k, v| %>
+<p><strong><%= k %> --> </strong><i><%= v %></i></p>
+<% end %>
+<p>-------</p>
+<% end %>
+
+<hr>
