@@ -1,13 +1,7 @@
-<meta HTTP-EQUIV="REFRESH" content="60";>
+<!-- <meta HTTP-EQUIV="REFRESH" content="20";> -->
 <h1><%= @user_name %>'s Fitbit Data</h1>
 
-<hr>
 
-<h2>Devices:</h2>
-<% @devices.each do |device| %>
-<p><strong><%= device[:device_version] %></strong></p>
-<p>Battery Level: <%= device[:battery] %></p>
-<% end %>
 
 <hr>
 
