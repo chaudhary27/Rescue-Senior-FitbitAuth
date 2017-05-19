@@ -12,7 +12,7 @@ class DashboardsController < ApplicationController
     #   @device_battery = device[:battery]
     # end
     # Daily Summary only works when the Fitbit is on for the day and
-    # data is fetched.
+    # data is fetched. Turn it on to get the heart rate data
     # @daily_summary = current_user.fitbit_client.daily_activity_summary[:summary][:heart_rate_zones]
     
     # @resting_heart_rate = current_user.fitbit_client.daily_activity_summary[:summary][:resting_heart_rate]
