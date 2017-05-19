@@ -11,7 +11,9 @@ class DashboardsController < ApplicationController
     #   @device_version = device[:device_version]
     #   @device_battery = device[:battery]
     # end
-    @daily_summary = current_user.fitbit_client.daily_activity_summary[:summary][:heart_rate_zones]
+    # Daily Summary only works when the Fitbit is on for the day and
+    # data is fetched.
+    # @daily_summary = current_user.fitbit_client.daily_activity_summary[:summary][:heart_rate_zones]
     
     # @resting_heart_rate = current_user.fitbit_client.daily_activity_summary[:summary][:resting_heart_rate]
     # @inactive_minutes = current_user.fitbit_client.daily_activity_summary[:summary][:sedentary_minutes]
